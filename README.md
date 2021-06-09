@@ -5,9 +5,9 @@ used in my thesis.
 
 ## Layout
 
-Every directory contains files corresponding to a single set of added
-changes. This process is incremental. Hence, iteration X also includes
-all changes made in prior iterations.
+Every `iteration_X` directory contains files corresponding to a single set
+of added changes. This process is incremental. Hence, iteration X also
+includes all changes made in prior iterations.
 
 Iterations:
 0) Base line
@@ -16,6 +16,14 @@ Iterations:
 3) Included nonterminals for lists of syntactic units (statements, methods, etc.)
 4) Included nonterminals for incomplete blocks
 5) Included nonterminals for empty module and comments. Added comment stripping
+
+Additionally, the `benchmarks` directory contains benchmark data.
+The files with the suffix `toplevel` are benchmarks for parsing
+with a specific top-level nonterminal, while the other files are benchmarks
+made with specific nonterminals used for parsing (i.e. the classification).
+
+The `diffs` directory contains metadata files required to run the
+benchmarks.
 
 Note that data corresponding to jEdit has been named with "trunk" due
 to a typo early on in the project.
