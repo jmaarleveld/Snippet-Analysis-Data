@@ -16,10 +16,15 @@ Iterations:
 3) Included nonterminals for lists of syntactic units (statements, methods, etc.)
 4) Included nonterminals for incomplete blocks
 5) Included nonterminals for empty module and comments. Added comment stripping
+6) Nonterminals merged under one top-level nonterminal
+
+NOTE: iteration 5 and 6 should yield the same results. Any difference
+can be considered a bug.
 
 Additionally, the `benchmarks` directory contains benchmark data.
 The files with the suffix `toplevel` are benchmarks for parsing
-with a specific top-level nonterminal, while the other files are benchmarks
+with a specific top-level nonterminal (iteration 6),
+while the other files are benchmarks
 made with specific nonterminals used for parsing (i.e. the classification).
 
 The `diffs` directory contains metadata files required to run the
